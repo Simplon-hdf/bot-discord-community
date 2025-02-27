@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  bot-dev:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: discord-bot-dev
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/dist
+    command: nodemon --watch src --ext ts,json --exec ts-node src/index.ts
+    # Configuration pour le hot reload
+    stdin_open: true
+    tty: true 
