@@ -5,6 +5,9 @@ node_modules/
 .env
 .env.local
 .env.*.local
+.env.development
+.env.production
+.env.test
 
 # Logs
 logs
@@ -42,3 +45,10 @@ build/
 
 # Token et configurations sensibles
 config.json
+
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
