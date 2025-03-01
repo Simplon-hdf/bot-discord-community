@@ -18,11 +18,14 @@
   },
   "homepage": "https://github.com/Simplon-hdf/bot-discord-community#readme",
   "devDependencies": {
+    "@types/node": "^22.13.5",
     "typescript": "^5.7.3"
   },
   "dependencies": {
-    "@types/node": "^22.13.5",
+    "@types/axios": "^0.14.4",
+    "axios": "^1.8.1",
     "discord.js": "^14.18.0",
+    "dotenv": "^16.4.5",
     "pino": "^9.6.0"
   }
 }
