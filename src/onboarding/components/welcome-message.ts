@@ -45,4 +45,4 @@ export function createWelcomeMessage() {
     embeds: [createWelcomeEmbed()],
     components: [createJoinButton()]
   };
-} 
+}
