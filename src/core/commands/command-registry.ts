@@ -4,8 +4,7 @@ import { logDebug, logError } from '../../utils/error.utils';
 
 // Importer les configurations de commandes
 import { clearDMCommandConfig } from '../../user/commands/clear-dm.command';
-import { setResourceChannelCommandConfig } from '../../admin/commands/set-resource-channel.command';
-import { infoBotCommandConfig } from '../../admin/commands/info-bot.command';
+import { setChannelCommandConfig } from './set-channel.command';
 
 /**
  * Initialise le registre de commandes avec toutes les commandes disponibles
@@ -17,9 +16,8 @@ export function initializeCommandRegistry(): void {
     // Enregistrer les commandes utilisateur
     commandService.registerCommand(clearDMCommandConfig);
     
-    // Enregistrer les commandes admin
-    commandService.registerCommand(setResourceChannelCommandConfig);
-    commandService.registerCommand(infoBotCommandConfig);
+    // Enregistrer les commandes administrateur
+    commandService.registerCommand(setChannelCommandConfig);
     
     // Ajouter ici les nouvelles commandes lors de leur création
     
