@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Simplon-hdf/bot-discord-community#readme",
   "devDependencies": {
+    "@discordjs/rest": "^2.4.3",
     "@types/node": "^22.13.5",
     "typescript": "^5.7.3"
   },
