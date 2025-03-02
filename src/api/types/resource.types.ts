@@ -9,7 +9,7 @@ export interface ResourceCreateDto {
   description: string;
   content: string;
   status: string;
-  tagUuids?: string[];
+  tagIds: string[];
 }
 
 // Type pour représenter une ressource depuis l'API

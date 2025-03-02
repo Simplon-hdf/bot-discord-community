@@ -76,7 +76,7 @@ export class ResourceApiService {
     title: string, 
     description: string, 
     content: string,
-    tagUuids: string[] = []
+    tagIds: string[] = []
   ): Promise<ResourceDto | null> {
     const resourceData: ResourceCreateDto = {
       uuidMember,
@@ -84,7 +84,7 @@ export class ResourceApiService {
       description,
       content,
       status: ResourceStatus.ACTIVE,
-      tagUuids: tagUuids
+      tagIds: tagIds
     };
     
     return this.createResource(resourceData);
