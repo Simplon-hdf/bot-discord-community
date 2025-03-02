@@ -11,6 +11,6 @@ export function truncateString(str: string, maxLength: number): string {
     return str.slice(0, maxLength - 3) + '...';
 }
 
-export function formatResourceTitle(displayName: string, title: string): string {
-    return `${displayName} | ${truncateString(title, 80)}`;
+export function formatResourceTitle(title: string): string {
+    return truncateString(title, 80);
 } 
